@@ -4,121 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOJA DE VIDA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+        .info-box {
+            margin-bottom: 2rem;
+        }
+        .info-box h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .info-box p {
+            margin: 0;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .experience ul {
+            padding-left: 20px;
+        }
+        .skills, .interests {
+            margin-top: 2rem;
+        }
+        .skills table, .interests table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills th, .skills td, .interests th, .interests td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .contact-form {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #3498db;
+            border-radius: 10px;
+            color: white;
+        }
+        .contact-form h2 {
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        .contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        .contact-form textarea {
+            resize: vertical;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2ecc71;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #27ae60;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Información General</h1>
-        <h3>Rafael Herrera <span>Analista desarrollador</span></h3>
-        <h3>Email: rherrerasagastume@gmail.com</h3>
-        <h3>Teléfono: 33070006</h3>
-        <h3>Ubicación: Col. Villa Vieja Sector B, Tegucigalpa, Honduras</h3>
-        <a href="https://www.linkedin.com/in/rafael-herrera-7a167a161/">Linkedin</a>
-        <a href="" >GitHub</a>
+    <div class="header">
+        <h1>HOJA DE VIDA</h1>
     </div>
-    <div>
-        <h1>Experiencia</h1>
-        <ul>
-            <li>Administrador de Sistemas e
-                Infraestructura, Ferretería El Carmen
-                <ol>
-                    <li>Administración de Servidores</li>
-                    <li>Administración de los sistemas de
-                        información</li>
-                    <li>Administración de usuarios</li>
-                    <li>Garantizar la seguridad de la
-                        infraestructura de IT</li>                    
-                </ol>
-            </li>
-            <li>Analista Desarrollador, Gabriel Kafati S.A.
-                (Café Indio)
-                <ol>
-                    <li>Análisis para el desarrollo de sistemas
-                        según las necesidades presentadas.</li>
-                    <li>Encargado directo de las plataformas de
-                        venta móvil.</li>
-                    <li>Desarrollo y mejora de las aplicaciones de
-                        ventas, censo y administración móvil.</li>
-                    <li>Estructuración y análisis de bases de datos.</li>
-                </ol>
-            </li>
-            <li>
-                Subdirector de Gestión de Información, Hospital Psiquiátrico “Santa Rosita”
-                <ol>
-                    <li>Apoyar y facilitar el proceso de análisis de
-                        la información de los servicios finales</li>
-                    <li>Generar y reportar indicadores para el
-                        CMG</li>
-                    <li>Generar discusión y consolidación de los
-                        indicadores.</li>
-                    <li>Dar cobertura y validación de las
-                        herramientas de gestión de medicamentos
-                        Farmatools y Wmssm.</li>
-                </ol>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th><h1>Habilidades Técnicas</h1></th>
-            </tr>
-            <tr>
-                <td>
-                    HTML5
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Java Script
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    CSS
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Nodejs
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    React
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th><h1>Intereses</h1></th>
-            </tr>
-            <tr>
-                <td>Lectura de Novelas</td>
-            </tr>
-            <tr>
-                <td>Lectura de Articulos informáticos</td>
-            </tr>
-            <tr>
-                <td>Practica de natación</td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <form action="index.html" name="frmContacto">
+    <div class="container">
+        <div class="info-box">
+            <h3>Rafael Herrera <span>Analista desarrollador</span></h3>
+            <p>Email: rherrerasagastume@gmail.com</p>
+            <p>Teléfono: 33070006</p>
+            <p>Ubicación: Col. Villa Vieja Sector B, Tegucigalpa, Honduras</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/rafael-herrera-7a167a161/">Linkedin</a>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="experience">
+            <h2 class="title">Experiencia</h2>
+            <ul>
+                <li>
+                    <strong>Administrador de Sistemas e Infraestructura, Ferretería El Carmen</strong>
+                    <ul>
+                        <li>Administración de Servidores</li>
+                        <li>Administración de los sistemas de información</li>
+                        <li>Administración de usuarios</li>
+                        <li>Garantizar la seguridad de la infraestructura de IT</li>                    
+                    </ul>
+                </li>
+                <li>
+                    <strong>Analista Desarrollador, Gabriel Kafati S.A. (Café Indio)</strong>
+                    <ul>
+                        <li>Análisis para el desarrollo de sistemas según las necesidades presentadas.</li>
+                        <li>Encargado directo de las plataformas de venta móvil.</li>
+                        <li>Desarrollo y mejora de las aplicaciones de ventas, censo y administración móvil.</li>
+                        <li>Estructuración y análisis de bases de datos.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Subdirector de Gestión de Información, Hospital Psiquiátrico “Santa Rosita”</strong>
+                    <ul>
+                        <li>Apoyar y facilitar el proceso de análisis de la información de los servicios finales</li>
+                        <li>Generar y reportar indicadores para el CMG</li>
+                        <li>Generar discusión y consolidación de los indicadores.</li>
+                        <li>Dar cobertura y validación de las herramientas de gestión de medicamentos Farmatools y Wmssm.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h2 class="title">Habilidades Técnicas</h2>
+            <table>
+                <tr>
+                    <td>HTML5</td>
+                </tr>
+                <tr>
+                    <td>Java Script</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>Nodejs</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                </tr>
+            </table>
+        </div>
+        <div class="interests">
+            <h2 class="title">Intereses</h2>
+            <table>
+                <tr>
+                    <td>Lectura de Novelas</td>
+                </tr>
+                <tr>
+                    <td>Lectura de Articulos informáticos</td>
+                </tr>
+                <tr>
+                    <td>Practica de natación</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-form">
             <h2>Contactarme</h2>
-            <div>
-                <labe>Correo</labe>
-                <input type="email" name="txtEmail" >
-            </div>
-            <br>
-            <div>
-                <label>Mensaje</label>
-                <textarea name="Mensaje"></textarea>
-            </div>
+            <label>Correo</label>
+            <input type="email" name="txtEmail">
+            <label>Mensaje</label>
+            <textarea name="Mensaje"></textarea>
             <button>Contactar</button>
-        </form>
+        </div>
     </div>
 </body>
 </html>
